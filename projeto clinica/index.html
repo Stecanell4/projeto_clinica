@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--é específica do navegador Internet Explorer, ela configura a página para ser renderizada como em outra versão do Internet Explorer-->
+    <meta name="viewport" content="width=device-width,user-scalable=0"> <!--deixa o site responsivo-->
+    <title>MediCenter</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/template.css" />
+    <script type="text/javascript">
+    window.onload = function(){
+        document.querySelector(".menuMobile").addEventListener("click", function(){
+            if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+            }else{
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+    </script>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""> <img src="assets/images/logo.png" ></a>
+            </div>
+            <div class="menu">
+                <nav>  <!--tag para usar no menu-->
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="">HOME</a> 
+                        </li>
+                        <li>
+                            <a href="">HOME</a> 
+                        </li>
+                        <li>
+                            <a href="">HOME</a> 
+                        </li>
+                        <li>
+                            <a href="">HOME</a> 
+                        </li>
+                        <li>
+                            <a href="">HOME</a> 
+                        </li>
+                        <li>
+                            <a href="">HOME</a> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Um teste momento</h1>
+                <h2>Medicenter is a responsive com certeza usado por todos</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">
+                        Emergency Case
+                    </div>
+                    <div class="banner_desc">
+                        Algum texto qualquer
+                    </div>
+                    <a href="">Read More</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">
+                        Doctors Timetable
+                    </div>
+                    <div class="banner_desc">
+                        Algum texto qualquer
+                    </div>
+                    <a href="">Read More</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">
+                        Opening Hours
+                    </div>
+                    <div class="banner_day1">
+                        <div class="day" Monday - Friday>
+                            Monday - Friday
+                        </div>
+                        <div class="time">
+                            8.00 - 17.00
+                        </div>
+                    </div>
+                    <div class="banner_day2">
+                        <div class="day" Monday - Friday>
+                            Saturday
+                        </div>
+                        <div class="time">
+                            9.30 - 17.30
+                        </div>
+                    </div>
+                    <div class="banner_day3">
+                        <div class="day" Monday - Friday>
+                            Sunday
+                        </div>
+                        <div class="time">
+                            9.30 - 15.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">
+                            Novas Noticias
+                        </div>
+                        <div class="widget_title_bar">
+
+                        </div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">
+                                        01 JAN 2022
+                                    </div>
+                                    <div class="news_comments">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/news_01012022.png">
+                                </div>
+                                <div class="news_title">
+                                    Tratamento efetivo contra sinusite
+                                </div>
+                                <div class="news_resume">
+                                    É a inflamação dos seios paranasais decorrente de infecções virais, bacterianas ou fúngicas ou reações alérgicas. Os sintomas incluem obstrução e congestão nasal, rinorreia purulenta, dor ou pressão facial; às vezes, há mal-estar, cefaleia e/ou febre.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">
+                                        03 JAN 2022
+                                    </div>
+                                    <div class="news_comments">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/news_01012022.png">
+                                </div>
+                                <div class="news_title">
+                                    Tratamento efetivo contra sinusite
+                                </div>
+                                <div class="news_resume">
+                                    É a inflamação dos seios paranasais decorrente de infecções virais, bacterianas ou fúngicas ou reações alérgicas. Os sintomas incluem obstrução e congestão nasal, rinorreia purulenta, dor ou pressão facial; às vezes, há mal-estar, cefaleia e/ou febre.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">
+                                        01 JAN 2022
+                                    </div>
+                                    <div class="news_comments">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/news_01012022.png">
+                                </div>
+                                <div class="news_title">
+                                    Tratamento efetivo contra sinusite
+                                </div>
+                                <div class="news_resume">
+                                    É a inflamação dos seios paranasais decorrente de infecções virais, bacterianas ou fúngicas ou reações alérgicas. Os sintomas incluem obstrução e congestão nasal, rinorreia purulenta, dor ou pressão facial; às vezes, há mal-estar, cefaleia e/ou febre.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">
+                                        01 JAN 2022
+                                    </div>
+                                    <div class="news_comments">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/news_01012022.png">
+                                </div>
+                                <div class="news_title">
+                                    Tratamento efetivo contra sinusite
+                                </div>
+                                <div class="news_resume">
+                                    É a inflamação dos seios paranasais decorrente de infecções virais, bacterianas ou fúngicas ou reações alérgicas. Os sintomas incluem obstrução e congestão nasal, rinorreia purulenta, dor ou pressão facial; às vezes, há mal-estar, cefaleia e/ou febre.
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">
+                            Departamentos
+                        </div>
+                        <div class="widget_title_bar">
+
+                        </div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="todos_blocos">
+                            <div class="bloco1">
+                                <a href="">Gerente</a>
+                            </div>
+                            <div class="bloco2">
+                                <a href="">Financeiro</a>
+                            </div>
+                            <div class="bloco3">
+                                <a href="">Setor de T.I</a>
+                            </div>
+                            <div class="bloco4">
+                                <a href="">Controladoria</a>
+                            </div>
+                            <div class="bloco5">
+                                <a href="">Produção</a>
+                            </div>
+                            <div class="bloco6">
+                                <a href="">Suporte</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">
+                            Marque uma Consulta
+                        </div>
+                        <div class="widget_title_bar">
+
+                        </div>
+                    </div>
+                    <div class="widget_body">
+                        ...
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="">
+                        Plano de Saúde
+                    </a>
+                </div>
+                <div class="fm_2">
+                    <a href="">
+                        Registros Médicos
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <a href="">
+                        Consulta Online
+                    </a>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Clinica Medica
+                            </div>
+                            <div class="widget_title_bar">
+
+                            </div>
+                        </div>
+                        <div class="widget_body">
+                            Clínica médica é uma especialidade que combina conhecimentos gerais sobre o corpo humano, priorizando a atuação na atenção primária.
+                        </div>
+                        <div class="widget_body_2">
+                            Contato:
+                        </div>
+                        <div class="widget_body_3">
+                           <div class="base01">
+                            Clinica Otovolf
+                           </div>
+                           <div class="base02">
+                            (49)3445-2565
+                           </div>
+                        </div>
+                        <div class="widget_body_3">
+                            <div class="base01">
+                             Clinica Lauro Miller
+                            </div>
+                            <div class="base02">
+                             (49)3445-8686
+                            </div>
+                         </div>
+                         <div class="widget_body_3">
+                            <div class="base01">
+                            E-mail:
+                            </div>
+                            <div class="base02">
+                             clinica.lauromiller@clinica.com.br
+                            </div>
+                         </div>
+                         <div class="redes_sociais">
+                            <div class="sociais_media">
+                                <a href=""> <img src="assets/images/facebook.png"></a>
+                            </div>
+                            <div class="sociais_media">
+                                <a href=""> <img src="assets/images/instagram.png"></a>
+                            </div>
+                            <div class="sociais_media">
+                                <a href=""> <img src="assets/images/twitter.png"></a>
+                            </div>
+                            <div class="sociais_media">
+                                <a href=""> <img src="assets/images/email.png"></a>
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Última Postagem
+                            </div>
+                            <div class="widget_title_bar">
+    
+                            </div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="ulti_postagem">
+                                <a href="">-> Mauris adipiscing mauris fingilla turpis interdum oulvinar nisi malesuada.</a>
+                            </div>
+                            <div class="ano_ultima">
+                                6 Anos atrás.
+                            </div>
+                            <div class="ulti_postagem">
+                                <a href="">-> Lorem ipsum dolor sit amat velum.</a>
+                            </div>
+                            <div class="ano_ultima">
+                                6 Anos atrás.
+                            </div>
+                            <div class="ulti_postagem">
+                                <a href="">-> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</a>
+                            </div>
+                            <div class="ano_ultima">
+                                6 Anos atrás.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">
+                                Últimos Tweets
+                            </div>
+                            <div class="widget_title_bar">
+    
+                            </div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="ulti_postagem">
+                                <a href="">-> "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth". For: Twetter... </a>
+                            </div>
+                            <div class="ano_ultima">
+                                4 Dias Atrás.
+                            </div>
+                            <div class="ulti_postagem">
+                                <a href="">-> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi." For: Twitter...</a>
+                            </div>
+                            <div class="ano_ultima">
+                                5 Dias Atrás.
+                            </div>
+                            <div class="ulti_postagem">
+                                <a href="">-> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment." For: Twitter...</a>
+                            </div>
+                            <div class="ano_ultima">
+                                6 Dias Atrás.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                Copyright - Todos os direitos reservados!
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

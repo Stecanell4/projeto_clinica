@@ -1,0 +1,599 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex; /*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens*/
+    justify-content: center;  /*alinhar no meio da tela*/
+    height: 120px; /*altura*/
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;  /*um ao lado do outro*/
+    width: 990px;  /*largura*/
+    /*height: 100px;  /*altura*/
+    /*background-color: red;  /*cor de fundo*/
+ 
+}
+
+.logo{
+    /*background-color: green;*/
+    display: flex;
+    align-items: center;  /*Alinha os itens ao centro.(ele muda dependendo se esta config na horizontal ou vertical*/
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul,nav li{
+    list-style: none;   /*vai tirar os pontos*/
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;  /*para conseguiur alterar o tamanho*/
+    padding: 15px;   /*tamanho dos menus*/
+    text-decoration: none;   /*tirar o sublinhado*/
+    text-transform: uppercase;   /* maiuscula*/
+    color: #727272;   /*cor para as letras menus*/
+    font-family: Arial, Helvetica, sans-serif;  /*fonte*/
+}
+
+nav .active a, nav a:hover{   /*usa para qnd passar o mouse ficar azul no lugar e as letras brancas*/
+    background-color: #39aae1;
+    color: white;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');   /*chamando a img*/
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    height: 700px;
+}
+
+.column{
+    flex-direction: column;  /*alinhamento de coluna (um a bxo do outro)*/
+
+}
+
+.banner_headline{   /*este tem tamanho variavel por causa da responsividade*/
+    flex: 1;
+    /*background-color: red;  /*apenas para ver o tamanho*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1{
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+
+.banner_headline h2{
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+
+.banner_options{   /*este tem tamanho fixo*/
+    height: 210px;
+    /*background-color: green;     /*apenas para ver o tamahnho*/
+    display: flex;
+}
+
+.banner1,.banner2,.banner3{
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+
+.banner_title{
+    font-size: 21px;
+}
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a{
+    display: inline-block;   /* para o bloco acompanhar o texto*/
+    border: 1px solid #FFFFFF;  /*para criar a borda no botao*/
+    padding: 5px;
+    color: white;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    font-size: 18px;
+}
+
+.banner_day1,.banner_day2,.banner_day3{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0079c7;
+}
+.day{
+    width: 100px;
+    margin: 10px;
+    font-size: 12px;
+}
+.time{
+    width: 100px;
+    margin: 10px;
+    font-size: 12px;
+    text-align: right;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color:#000000;
+    font-size: 21px;
+    font-weight: bold;  /*fonte negrita*/
+}
+.widget_title_bar{
+    width: 50px;  /*largura*/
+    height: 3px;  /*altura*/
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+.todos_blocos{
+    display: flex; /*para um elemento, todos os filhos ficam um do lado do outro como se estivessem sob o efeito de display: inline.*/
+    justify-content: space-between; /*O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles*/
+    flex-wrap: wrap; /* define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas.*/
+}
+.bloco{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.bloco6{
+    background-image: url("../images/suporte.png");
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    margin-top: 20px;
+    background-color:#36a9e1;
+    filter:opacity(80%);
+    border-radius: 10%;
+    border: 1px solid #030303;
+}
+.bloco6 a{
+    display: flex;   /* para o bloco acompanhar o texto*/
+    color: black;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    height: 150px;
+    width: 150px;
+    align-items:flex-end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 22px;
+}
+.bloco6:hover{
+    position: relative;
+    top:-10px;
+    box-shadow:0px 7px 7px #666
+}
+
+.bloco1{
+    background-image: url("../images/gerente.png");
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    margin-top: 20px;
+    background-color:#36a9e1;
+    filter:opacity(80%);
+    border-radius: 10%;
+    border: 1px solid #030303;
+}
+.bloco1 a{
+    display: flex;   /* para o bloco acompanhar o texto*/
+    color: black;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    height: 150px;
+    width: 150px;
+    align-items:flex-end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 22px;
+}
+.bloco1:hover{
+    position: relative;
+    top:-10px;
+    box-shadow:0px 7px 7px #666
+}
+
+.bloco5{
+    background-image: url("../images/producao.png");
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    margin-top: 20px;
+    background-color:#36a9e1;
+    filter:opacity(80%);
+    border-radius: 10%;
+    border: 1px solid #030303;
+}
+.bloco5 a{
+    display: flex;   /* para o bloco acompanhar o texto*/
+    color: black;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    height: 150px;
+    width: 150px;
+    align-items:flex-end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 22px;
+}
+.bloco5:hover{
+    position: relative;
+    top:-10px;
+    box-shadow:0px 7px 7px #666
+}
+
+.bloco2{
+    background-image: url("../images/financeiro.png");
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    margin-top: 20px;
+    background-color:#36a9e1;
+    filter:opacity(80%);
+    border-radius: 10%;
+    border: 1px solid #030303;
+}
+.bloco2 a{
+    display: flex;   /* para o bloco acompanhar o texto*/
+    color: black;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    height: 150px;
+    width: 150px;
+    align-items:flex-end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 22px;
+}
+.bloco2:hover{
+    position: relative;
+    top:-10px;
+    box-shadow:0px 7px 7px #666
+}
+
+.bloco3{
+    background-image: url("../images/ti.png");
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    margin-top: 20px;
+    background-color:#36a9e1;
+    filter:opacity(80%);
+    border-radius: 10%;
+    border: 1px solid #030303;
+}
+.bloco3 a{
+    display: flex;   /* para o bloco acompanhar o texto*/
+    color: black;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    height: 150px;
+    width: 150px;
+    align-items:flex-end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 21px;
+}
+.bloco3:hover{
+    position: relative;
+    top:-10px;
+    box-shadow:0px 7px 7px #666
+}
+
+.bloco4{
+    background-image: url("../images/controladoria.png");
+    background-position: center;   /*colocando no centro*/
+    background-size: cover;     /*preencher o espaço do banner */
+    margin-top: 20px;
+    background-color:#36a9e1;
+    filter:opacity(80%);
+    border-radius: 10%;
+    border: 1px solid #030303;
+}
+.bloco4 a{
+    display: flex;   /* para o bloco acompanhar o texto*/
+    color: black;
+    text-decoration: none;   /*para tirar o sublinhado*/
+    height: 150px;
+    width: 150px;
+    align-items:flex-end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 21px;
+}
+.bloco4:hover{
+    position: relative;
+    top:-10px;
+    box-shadow:0px 7px 7px #666
+}
+
+.flex{  /* para todas as noticias ficarem ao lado da outra, obs tem q adc la no html tmb o "flex"*/
+    display: flex;
+    flex-wrap: wrap;  /*para ele quebrar linha nas noticias, obs: deve-se definir um tamanho minino que a noticia deve ter*/
+}
+
+article{
+    flex: 1;  /*todos do msm tamanho*/
+    min-width: 300px;  /*tamanho minimo da noticia*/
+    margin-right: 20px;
+}
+
+article a{
+    text-decoration: none;
+}
+
+article .news_data{
+    display: flex;  /*deixar um do lado do outro*/
+}
+
+article .news_posted_at{
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news_comments{
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news_thumbnail{   /*espaço entre a imagem e a data*/
+    margin-top: 15px;
+}
+
+article .news_thumbnail img{  /*ajustar o tamanho para a img ficar apenas onde vai fica a noticiar*/
+    width: 100%;
+    height: auto;
+}
+
+article .news_title{  /*espaço eentre a img e o title, ajuste da cor e da fonte*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+
+article .news_resume{
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;  /*espaçamento entre linhas*/
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu{
+    display: flex;
+}
+
+.fm_1, .fm_2, .fm_3{
+    flex: 1;
+    color: #FFFFFF;
+}
+
+.fm_1{
+    background-color: #39aae1;
+}
+.fm_2{
+    background-color: #0079c7;
+}
+.fm_3{
+    background-color: #2b4c99;
+}
+
+.footer_menu a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.footer_area{
+    display: flex;
+    color: #FFFFFF;
+}
+
+.footer_areaitem{
+    flex: 1;
+    color: #FFFFFF;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+footer .widget_title_text{
+    color: #FFFFFF;
+}
+
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;  /*deixar no meio*/
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+footer .widget_body{
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+}
+
+footer .widget_body_2{
+    font-size: 15px;
+}
+
+footer .widget_body_3{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+footer .base01{
+    font-size: 12px;
+    margin: 10px;
+}
+
+footer .base02{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.redes_sociais{
+    display: flex;
+    margin: 10px;
+}
+
+.sociais_media{
+    margin: 10px;
+}
+
+.ulti_postagem{
+    margin-bottom: 5px;
+}
+
+.ulti_postagem a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ano_ultima{
+    width: 80px;
+    height: 15px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{ /*os tracinhos do menu*/
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width:600px){
+    .banner_headline{
+        padding: 20px;
+    }
+
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside{
+        padding: 20px;
+    }
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy{
+        padding-left: 20px;
+    }
+    header .container{
+        flex-direction: row;
+    }
+
+    header nav ul{  /*arrumando como aparece o menu*/
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
